@@ -1,0 +1,40 @@
+.myModal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.myModalContent {
+  background-color: white;
+  padding: 25px;
+  border-radius: 15px;
+  min-width: 250px;
+  z-index: 99;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,.4);
+  backdrop-filter: blur(1px);
+  z-index: 98;
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  font-size: 30px;
+  line-height: 30px;
+  border: 1px solid teal;
+  cursor: pointer;
+  z-index: 99;
+}

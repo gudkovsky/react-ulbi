@@ -11,6 +11,7 @@ export default function PostForm(props) {
 
     props.create(newPost);
     setPost({ title: "", body: "" });
+    props.onClose();
   }
 
   return (
@@ -31,7 +32,12 @@ export default function PostForm(props) {
           setPost({ ...post, body: e.target.value });
         }}
       />
-      <MyButton onClick={addNewPost}>Создать пост</MyButton>
+      <MyButton
+        onClick={addNewPost}
+        disabled={!post.title || !post.body}
+      >
+        Создать пост
+      </MyButton>
     </form>
   );
 }

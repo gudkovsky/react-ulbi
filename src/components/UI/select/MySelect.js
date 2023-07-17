@@ -8,8 +8,9 @@ export default function MySelect({ options, defaultValue, value, onChange }) {
         name="posts"
         id="posts"
         style={{ margin: "15px 5px" }}
-        value={value}
+        // value={value}
         onChange={(e) => onChange(e.target.value)}
+        defaultValue={defaultValue}
       >
         <option
           disabled
