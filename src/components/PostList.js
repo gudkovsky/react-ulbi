@@ -19,7 +19,7 @@ export default function PostList({ posts, title, removePost }) {
             classNames="post"
           >
             <Post
-              number={index + 1}
+              number={post.id}
               post={post}
               removePost={removePost}
             />

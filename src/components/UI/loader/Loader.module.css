@@ -1,0 +1,29 @@
+.loader {
+  width: 400px;
+  height: 400px;
+  border: 26px dashed teal;
+  border-radius: 50%;
+  animation: rotate 3s ease-in infinite;
+}
+
+.title {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
