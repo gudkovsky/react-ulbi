@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-ulbi/static/css/main.81ed8d1d.css",
+    "main.js": "/react-ulbi/static/js/main.2529f3cc.js",
+    "static/media/404.gif": "/react-ulbi/static/media/404.181c5a6430bcb77324b1.gif",
+    "index.html": "/react-ulbi/index.html",
+    "main.81ed8d1d.css.map": "/react-ulbi/static/css/main.81ed8d1d.css.map",
+    "main.2529f3cc.js.map": "/react-ulbi/static/js/main.2529f3cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81ed8d1d.css",
+    "static/js/main.2529f3cc.js"
+  ]
+}
