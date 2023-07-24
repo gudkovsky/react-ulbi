@@ -10,21 +10,14 @@ export default function NotFound({ fetchError }) {
               <div className="four_zero_four_bg"></div>
 
               <div className="contant_box_404">
-                <h3
-                  style={{ textAlign: "center" }}
-                  className="h2"
-                >
-                  Возникла ошибка
-                </h3>
                 <h1
                   style={{ textAlign: "center", paddingBottom: "50px" }}
                   className="text-center "
                 >
-                  404
+                  {" "}
+                  Возникла ошибка
                 </h1>
-                <p style={{ textAlign: "center" }}>
-                  {fetchError} - о чем-то говорит?
-                </p>
+                <p style={{ textAlign: "center" }}></p>
               </div>
             </div>
           </div>

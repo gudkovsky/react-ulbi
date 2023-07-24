@@ -6,7 +6,9 @@
 
 #root {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .App {
@@ -20,6 +22,24 @@
   margin-top: 15px;
   justify-content: space-between;
   align-items: center;
+}
+
+.post__btns {
+  display: flex;
+  column-gap: 10px;
+}
+
+.post-page {
+  padding: 10%;
+}
+
+.post-title::first-letter, .post-body::first-letter {
+  text-transform: capitalize;
+}
+
+.post-body {
+  max-width: 50%;
+  margin-top: 40px;
 }
 
 .post-enter {
@@ -55,9 +75,11 @@
 =======================*/
 
 .page_404 {
+  display: flex;
+  flex-direction: column;
   padding: 40px 0;
   background: #fff;
-  font-family: "Arvo", serif;
+  min-width: 100%;
 }
 
 .page_404 img {
@@ -65,9 +87,11 @@
 }
 
 .four_zero_four_bg {
-  background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+  background-image: url('/src/assets/404.gif');
   height: 400px;
   background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .four_zero_four_bg h1 {
@@ -87,4 +111,28 @@
 }
 .contant_box_404 {
   margin-top: -50px;
+}
+
+/* NAV */
+
+.navBar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(0,0,0,0.1);
+  align-items: center;
+  padding: 0 15px;
+
+}
+
+.navBar__links {
+  display: flex;
+  column-gap: 20px;
+}
+ 
+.navBar__links a {
+  color: black;
+  text-decoration: none;
+  font-weight: 800;
 }
