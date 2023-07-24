@@ -3,14 +3,14 @@ import Post from "./Post.js";
 
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-export default function PostList({ posts, title, removePost }) {
-  if (!posts.length) {
+export default function PostList({ posts, title, removePost, error }) {
+  if (!error && !posts.length) {
     return <h1 style={{ textAlign: "center" }}>Постов не найдено!</h1>;
   }
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>{title}</h1>
+      {!error && <h1 style={{ textAlign: "center" }}>{title}</h1>}
       <TransitionGroup>
         {posts.map((post, index) => (
           <CSSTransition

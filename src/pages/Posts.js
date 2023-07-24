@@ -101,10 +101,11 @@ function Posts() {
         posts={sortedAndSearchedPosts}
         title={"Список постов"}
         removePost={removePost}
+        error={fetchError}
       />
       <div
         ref={lastElement}
-        style={{ height: "20px", backgroundColor: "black" }}
+        style={{ height: "10px", backgroundColor: "transparent" }}
       ></div>
 
       <Pagination
